@@ -1,11 +1,10 @@
-(lang dune 1.11)
+(lang dune 3.5)
 (name brisk-reconciler)
 (source (github brisk/brisk-reconciler))
 (license MIT)
 (version 1.0.0-alpha.0)
 
 (generate_opam_files true)
-(using fmt 1.2)
 
 (package
     (name brisk-reconciler)

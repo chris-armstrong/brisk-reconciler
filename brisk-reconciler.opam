@@ -6,12 +6,13 @@ homepage: "https://github.com/brisk/brisk-reconciler"
 bug-reports: "https://github.com/brisk/brisk-reconciler/issues"
 depends: [
   "ocaml" {>= "4.4.0"}
-  "dune" {>= "1.10"}
+  "dune" {>= "3.5"}
   "reason" {>= "3.4.0"}
   "ppxlib"
+  "odoc" {with-doc}
 ]
 build: [
-  ["dune" "subst"] {pinned}
+  ["dune" "subst"] {dev}
   [
     "dune"
     "build"
